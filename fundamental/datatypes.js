@@ -7,4 +7,15 @@
 // undefined,
 // symbole=>unique,
 // object
-console.log(typeof null);
+// console.log(typeof null);
+
+
+// Datatype conversion confusion
+let score='33'
+console.log(typeof score);
+console.log(typeof (score));
+
+
+let valueNumber=Number(score)
+console.log(typeof valueNumber);
+// console.log( valueNumber);
