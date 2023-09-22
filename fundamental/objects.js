@@ -43,7 +43,7 @@ console.log(jsUser.greetingtwo())
 ?*/
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
+/*
 const tinderUser = {}
 tinderUser.id = "123abc"
 tinderUser.name ="viraj"
@@ -99,14 +99,20 @@ console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+*/
 
-
-// de-structuring
+// objects de-structuring
 
 const course = {
     courseName:"j in hindi",
     price:"999",
     cousreInstuctor:"hitesh"
 }
-console.log(course.cousreInstuctor)
+// console.log(course.cousreInstuctor)
+const {cousreInstuctor:Instructor}=course
+// console.log(cousreInstuctor);
+console.log(Instructor);
+
+
+
 
