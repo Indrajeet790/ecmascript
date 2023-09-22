@@ -101,6 +101,7 @@ console.log(Object.entries(tinderUser));
 console.log(tinderUser.hasOwnProperty("isLoggedIn"));
 */
 
+
 // objects de-structuring
 
 const course = {
@@ -112,6 +113,11 @@ const course = {
 const {cousreInstuctor:Instructor}=course
 // console.log(cousreInstuctor);
 console.log(Instructor);
+
+
+
+
+
 
 
 
