@@ -72,5 +72,41 @@ const obj2 ={3:"a",4:"b"}
 // console.log(obj3);
 // console.log(obj4);
 
-const obj={...obj1,...obj2}
-console.log(obj);
+// using spread 
+// const obj={...obj1,...obj2}
+// console.log(obj);
+
+
+const users = [
+    {
+        id:1,
+        email:"indra@gmail.com"
+        
+    },{
+        id:1,
+        email:"indra@gmail.com"
+
+    }
+
+]
+
+users[1].email
+console.log(tinderUser)
+
+// find keys and values
+console.log(Object.keys(tinderUser));
+console.log(Object.values(tinderUser));
+console.log(Object.entries(tinderUser));
+
+console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+
+
+// de-structuring
+
+const course = {
+    courseName:"j in hindi",
+    price:"999",
+    cousreInstuctor:"hitesh"
+}
+console.log(course.cousreInstuctor)
+
