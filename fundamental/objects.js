@@ -1,5 +1,6 @@
 
 // symbol
+/*
 const mySym =Symbol("key1")
 
 const jsUser = {
@@ -39,3 +40,37 @@ jsUser.greetingtwo =function(){
 }
 console.log(jsUser.greetingtwo())
 
+?*/
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+const tinderUser = {}
+tinderUser.id = "123abc"
+tinderUser.name ="viraj"
+tinderUser.isLoggedIn =false;
+// console.log(tinderUser)
+
+
+// nested object
+const regulerUser = {
+    email:"abc@gmail.com",
+    fullName:{
+        userFullName:{
+            firstName:"indrajeet",
+            lastName:"nayak"
+        }
+    }
+}
+// console.log(regulerUser.fullName.userFullName);
+
+// 
+const obj1={1:"a",2:"b"}
+const obj2 ={3:"a",4:"b"}
+// 
+// const obj3 ={obj1,obj2}
+// const obj4=Object.assign({},obj1,obj2)
+// console.log(obj3);
+// console.log(obj4);
+
+const obj={...obj1,...obj2}
+console.log(obj);
