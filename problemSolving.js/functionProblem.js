@@ -10,7 +10,7 @@ console.log(reverseNumber(34))
 */
 
 // way 2
-
+/*
 function reverseNumber(num){
     var rev=0;
     while(num>0){
@@ -22,3 +22,14 @@ function reverseNumber(num){
 
 }
 console.log(reverseNumber(123456))
+*/
+
+
+// problem 7:check wheter a passed string is palindrom or not
+
+function stringPalChecker(str){
+    var reverse = str.split(" ").reverse().join("");
+    if(reverse === str) return true;
+    else return false;
+}
+console.log(stringPalChecker("151"))
