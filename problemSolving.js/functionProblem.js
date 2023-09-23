@@ -28,7 +28,7 @@ console.log(reverseNumber(123456))
 // problem 7:check wheter a passed string is palindrom or not
 
 function stringPalChecker(str){
-    var reverse = str.split(" ").reverse().join("");
+    var reverse = str.split("").reverse().join("");
     if(reverse === str) return true;
     else return false;
 }
