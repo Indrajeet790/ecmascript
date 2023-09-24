@@ -13,5 +13,5 @@ function occurance(str){
     return occ;
 
 }
-const result=occurance("aaaabbbbccccdddzsxdfcgvhbjnkml")
+const result=occurance("elephent")
 console.log(result  )

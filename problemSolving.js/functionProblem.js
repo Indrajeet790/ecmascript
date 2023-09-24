@@ -36,7 +36,7 @@ console.log(stringPalChecker("151"))
 */
 
 // problem 8: write a javascript function that return a passed string with letters in alphaetical order.
-
+/*
 function stringAlphaBeticalOrder(str){
     return str.split("").sort().join("");
 }
@@ -53,3 +53,7 @@ function capitalize(str){
 
 }
 console.log(capitalize("kya jaan kaisi ho"));
+*/
+
+// problem 10: write a javscript function to get the number
+//   of  occurance of each letter in specified string. 
