@@ -10,9 +10,8 @@ function compressString(str) {
             count = 1;
         }
     }
-
-    // Only return the compressed string if it's shorter than the original
-    return compressed.length < str.length ? compressed : str;
+    
+    return compressed;
 }
 
 const originalString = "aabcccccaaa";
