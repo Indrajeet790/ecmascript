@@ -12,11 +12,12 @@ function reverseString(str) {
 function calculateCharacterFrequency(str) {
     const frequency = {};
 
-    for (let char of str) {
-        if (frequency[char]) {
-            frequency[char]++;
-        } else {
+    for (let i = 0; i < str.length; i++) {
+        const char = str.charAt(i);
+        if (!frequency[char]) {
             frequency[char] = 1;
+        } else {
+            frequency[char]++;
         }
     }
 
