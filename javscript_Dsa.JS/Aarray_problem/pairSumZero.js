@@ -28,28 +28,42 @@ function pairSumToZero(arr) {
 // // +++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-function pairSum(arr,x){
-  let targetSum =x;
-  let left =0;
-  let right=arr.length-1;
-  let result=[];
+function pairSum(Arr, x) {
+  let arr=Arr.sort();
+  let targetSum = x;
 
-  while(left < right){
-    sum= arr[left] + arr[right]
+  let left = 0;
+  let right = arr.length - 1;
+  let result = [];
 
-    if(sum === targetSum){
-       result.push([arr[left],arr[right]]);
-       left++;
-       right--;
+  while (left < right) {
 
-    }else if(sum > targetSum){
+    // check unique pair of element
+    while (arr[left] == arr[left + 1]) {
+      left++;
+    }
+
+    while (arr[right] == arr[right - 1]) {
       right--;
-    }else{
+    }
+
+
+     sum = arr[left] + arr[right]
+
+    if (sum === targetSum) {
+      result.push([arr[left], arr[right]]);
+      left++;
+      right--;
+
+    } else if (sum > targetSum) {
+      right--;
+    } else {
       left++
     }
   }
   return result;
 }
 
-const printPairSum = pairSum([-5,0,1,2,3,4,5,6],6)
-console.log(printPairSum );
+const printPairSum = pairSum([ 8,1, 7,2, 4,3, 3,5, 4, 5, 6,7],13)
+console.log(printPairSum);
+
